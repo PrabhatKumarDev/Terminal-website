@@ -28,7 +28,7 @@ const Terminal = () => {
  
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = './assets/Images/Docs/resume.pdf'; 
+    link.href = process.env.PUBLIC_URL + './Docs/resume.pdf'; 
     link.download = 'Your_CV.pdf'; 
     document.body.appendChild(link);
     link.click();
