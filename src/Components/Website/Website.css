@@ -1,0 +1,6 @@
+.command-result > a{
+    color: #fbcb09;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 1rem;
+}

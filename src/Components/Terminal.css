@@ -1,0 +1,25 @@
+.input-container{
+  display: flex;
+  align-items: center;
+}
+.input-label{
+  color: #fbcb0a;
+  font-size: 1.6rem;
+}
+.input-text{
+    color:#00ffab;
+}
+.input-command{
+  background-color: transparent;
+  width: 100%;
+  margin-left: 1rem;
+  outline: none;
+  border: none;
+  padding: 1rem 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.command-output .input-command{
+  color: white;
+}

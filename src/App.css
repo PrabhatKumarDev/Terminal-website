@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header > img{
+  height: 10rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-container{
+  width: fit-content;
 }
-
-.App-link {
-  color: #61dafb;
+.message-text{
+  font-size: 1.6rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
+  margin: 2rem 0;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
-
-@keyframes App-logo-spin {
+.first-text{
+  animation:typing 3s steps(30,end) forwards;
+}
+.second-text{
+  display: none; /* Initially hide the second text */
+}
+.second-text.animate {
+  animation: typing 3s steps(30, end) forwards;
+}
+.help-text{
+  color: #00ffab;
+}
+body{
+  height: fit-content;
+  background-color: #2c3539;
+  padding: 2rem;
+  overflow-x: hidden;
+  color: #d3d3d3;
+  scroll-margin-bottom: 5rem;
+  letter-spacing: 1px;
+}
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    display: none;
+    width: 0;
   }
-  to {
-    transform: rotate(360deg);
+  to{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  html{
+    font-size: 9px;
+  }
+  header > img{
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 910px) {
+  html{
+    font-size: 8px;
+  }
+  header > img{
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  html{
+    font-size: 7.5px;
+  }
+  header > img{
+    height: 4.7rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html{
+    font-size: 7.5px;
+  }
+  header > img{
+    height: 2.7rem;
   }
 }

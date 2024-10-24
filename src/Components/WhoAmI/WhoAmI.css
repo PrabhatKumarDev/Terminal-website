@@ -1,0 +1,6 @@
+.command-result ul{
+    font-family: 'IBM Plex Mono', monospace;
+    margin-left: 1.6rem;
+    font-weight: 300;
+    list-style: square;
+}

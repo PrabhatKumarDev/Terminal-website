@@ -1,0 +1,30 @@
+.help-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+dl{
+    max-width: 80rem;
+}
+dl>p{
+    font-size: 1.7rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+    white-space: wrap;
+}
+.data-dt{
+    font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 10px;
+  text-transform: lowercase;
+  color: #fbcb0a;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.data-dd{
+    margin-top: 5px;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
+}
