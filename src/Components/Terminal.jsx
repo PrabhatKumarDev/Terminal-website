@@ -29,7 +29,7 @@ const Terminal = () => {
   const downloadCV = () => {
     const link = document.createElement('a');
     link.href = process.env.PUBLIC_URL + './Docs/resume.pdf'; 
-    link.download = 'Your_CV.pdf'; 
+    link.download = 'cv.pdf'; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
